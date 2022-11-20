@@ -1,0 +1,37 @@
+name: Cypress Testing
+on:
+  push:
+    branches: [master]
+jobs:
+  test_run:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+          node-version: '14.x'
+    - name: Install all dependencies
+      run: npm install
+    - name: Install allure reporter
+      run: npm i -D @shelex/cypress-allure-plugin
+    - name: Install allure command line
+      run: npm install -g allure-commandline --save-dev
+    - name: Run tests
+      run: npm run spec:allure
+    - name: Generate Report
+      if: always()
+      run: npm run allure:report
+    - name: Upload Results
+      uses: actions/upload-artifact@v1
+      if: always()
+      with:
+          name: allure-report
+          path: ./allure-report
+    - name: Deploy to gh-pages
+      if: always()
+      uses: peaceiris/actions-gh-pages@v3.9.0
+      with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: allure-report
