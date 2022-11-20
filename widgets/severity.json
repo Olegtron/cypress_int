@@ -1,0 +1,1 @@
+[{"uid":"569b98a7f61a676c","name":"Should logout from account","time":{"start":1668975150241,"stop":1668975152473,"duration":2232},"status":"passed","severity":"normal"},{"uid":"2d1282f4198f6ca1","name":"Should open website, fill login form and login into account","time":{"start":1668975146955,"stop":1668975150231,"duration":3276},"status":"passed","severity":"normal"}]
