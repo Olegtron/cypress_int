@@ -2,12 +2,10 @@ class ProductPage
 {
     //Buttons
     burgerButton(){
-        const burgerButton = cy.get('#react-burger-menu-btn')
-        burgerButton.click()
+        cy.get('#react-burger-menu-btn').click()
     }
     logoutButton(){
-        const logoutButton = cy.get('#logout_sidebar_link')
-        logoutButton.click()
+        cy.get('#logout_sidebar_link').click()
     }
 }
 
