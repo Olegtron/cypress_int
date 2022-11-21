@@ -18,6 +18,12 @@ passwordFieldFill(value){
         logInButton.click()
     }
 
+//errors
+loginError(){
+    const loginError = cy.get('form>div>h3')
+    loginError.contains("Epic sadface: Username and password do not match any user in this service")
+    return this
+}
 }
 
 export default MainPage
