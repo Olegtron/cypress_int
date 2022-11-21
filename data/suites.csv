@@ -1,3 +1,5 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Sun Nov 20 20:21:06 UTC 2022","Sun Nov 20 20:21:09 UTC 2022","3162","","test suite for login functionality","","","","Should open website, fill login form and login into account",""
-"passed","Sun Nov 20 20:21:09 UTC 2022","Sun Nov 20 20:21:12 UTC 2022","2549","","test suite for login functionality","","","","Should logout from account",""
+"passed","Mon Nov 21 11:45:10 UTC 2022","Mon Nov 21 11:45:13 UTC 2022","3267","","test suite for login functionality","","","","Should open website, fill login form with valid credentials and login into account",""
+"passed","Mon Nov 21 11:45:28 UTC 2022","Mon Nov 21 11:45:30 UTC 2022","2210","","logout functionality check","","","","Should logout from account",""
+"passed","Mon Nov 21 11:45:25 UTC 2022","Mon Nov 21 11:45:28 UTC 2022","2988","","logout functionality check","","","","Should login into account",""
+"passed","Mon Nov 21 11:45:13 UTC 2022","Mon Nov 21 11:45:15 UTC 2022","2612","","test suite for login functionality","","","","Should open website, fill login form with invalid credentials and get error",""
